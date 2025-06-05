@@ -1,0 +1,423 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <!-- <link rel="stylesheet" href="swiper.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.6.2/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="stylet.css">
+
+    <title>wayZpune</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="Name">   </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Restaurants & Hotels</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#video" class="nav__link">Attraction</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#place" class="nav__link">Hills Station</a>
+                    </li>
+                    <li>. 
+                        <a href="PAT.html" class="nav__link">PAT</a>
+                    </li>
+                    <li>
+                        <a href="pune map.html" class="nav__link">MAP</a>
+                    </li>
+                    <li>
+                            <a href="login.html"><button type="button" class="button" style="padding: 12px 30px;">Log in</button></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <img src="./img/punef.jpg" alt="" class="home__img">
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__data-subtitle">Discover amazing food and breathtaking destinations.</span>
+                    <h1 class="home__data-title">Explore The <br> Pune <b>One BIte At <br>A Time</b></h1>
+                    <a href="startexp.html" class="button"> Start Exploring </a>
+
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-box-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">More Information <br> About The Best Places</h2>
+                    <p class="about__description">Experience Pune's vibrant culinary scene, from street food delights to
+                        fine dining. Indulge in local specialties like Misal Pav and Vada Pav. Escape the city's bustle
+                        with a scenic trip to nearby hill stations, offering breathtaking views and outdoor adventures.
+                    </p>
+                </div>
+
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="./img/foofe.jpg" alt="" class="about__img-one">
+                    </div>
+                    <div class="about__img-overlay">
+                        <img src="./img/hotel.jpg" alt="" class="about__img-two">
+                    </div>
+
+                    <div class="about__img-overlay">
+                        <img src="./img/hiil.jpg" alt="" class="about__img-three">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--==================== VIDEO ====================-->
+        <section class="video section">
+            <h2 class="section__title" id="video">Video Tour</h2>
+
+            <div class="video__container">
+                <p class="video__description">Find out more with our video of the most beautiful and
+                    pleasant places for you and your family.
+                </p>
+
+                <div class="video__content">
+                    <video id="video-file" autoplay>
+                        <source src="./img/city.mp4" type="video/mp4">
+                    </video>
+
+
+                    <video id="video-file" autoplay>
+                        <source src="./img/aga khan palace .mp4" type="video/mp4">
+                    </video>
+
+
+                    <video id="video-file" autoplay>
+                        <source src="./img/shanivar wada2.mp4 " type="video/mp4">
+                    </video>
+
+                    <video id="video-file" autoplay>
+                        <source src="./img/pahad.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PLACES ====================-->
+        <section class="place section" id="place">
+            <h2 class="section__title">Choose Your Place</h2>
+
+            <div class="place__container container grid">
+                <!--==================== PLACES CARD 1 ====================-->
+                <div class="place__card">
+                    <img src="./img/place  2.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,6</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">lonavala and khandala</h3>
+                            <!-- <span class="place__subtitle">Indonesia</span> -->
+                            <!-- <span class="place__price">$2499</span> -->
+                        </div>
+                    </div>
+
+                    <a href="l&K.html"><button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a>
+                </div>
+
+                <!--==================== PLACES CARD 2 ====================-->
+                <div class="place__card">
+                    <img src="./img/metharan 2.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4.6</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">Matheran</h3>
+                        </div>
+                    </div>
+
+                    <a href="metharan.html"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a>
+                </div>
+
+                <!--==================== PLACES CARD 3 ====================-->
+                <div class="place__card">
+                    <img src="./img/mahableshwar.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,6</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">Mahabaleswar</h3>
+                            
+                        </div>
+                    </div>
+
+                    <a href="mahableshwar.html"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a>
+                </div>
+
+                <!--==================== PLACES CARD 4 ====================-->
+                <div class="place__card">
+                    <img src="./img/panchgani.webp" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">Panchgani</h3>
+                        </div>
+                    </div>
+
+                    <a href="panchgani.html"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a>
+                </div>
+
+                <!--==================== PLACES CARD 5 ====================-->
+                <div class="place__card">
+                    <img src="./img/tahmini3.webp" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">Tamhini Ghat</h3>
+                        </div>
+                    </div>
+
+                    <a href="tahmini.html"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a>
+                </div>
+                <!--==================== PLACES CARD 6 ====================-->
+                <div class="place__card">
+                    <img src="./img/lavasa 3.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4.6</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">Lavasa </h3>
+                        </div>
+                    </div>
+
+                    <a href="lavasa.html"> <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a>
+                </div>
+            </div>
+        </section>
+        <!--==================== WHY CHOOSE US ====================-->
+        <!-- Include Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <section class="why-choose-us">
+            <div class="why-choose-header">
+                <h2>Why Choose Us? </h2>
+            </div>
+
+            <div class="reasons-container">
+
+                <!-- Reason 1: Interactive Maps -->
+                <div class="reason">
+                    <i class="fas fa-map-marked-alt"></i> <!-- Map Icon -->
+                    <h3>Interactive & Accurate Maps</h3>
+                    <p>Get real-time navigation with detailed routes, landmarks, and insights.</p>
+                </div>
+
+                <!-- Reason 2: Lightning Fast -->
+                <div class="reason">
+                    <i class="fas fa-bolt"></i> <!-- Lightning Icon -->
+                    <h3>Lightning-Fast Performance</h3>
+                    <p>Enjoy a super-fast experience with seamless and smooth navigation.</p>
+                </div>
+
+                <!-- Reason 3: Local Insights -->
+                <div class="reason">
+                    <i class="fas fa-users"></i> <!-- Community Icon -->
+                    <h3>Community-Driven Insights</h3>
+                    <p>Access exclusive local tips, user recommendations, and hidden gems.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--==================== SUBSCRIBE ====================-->
+        <section class="subscribe section">
+            <div class="subscribe__bg">
+                <div class="subscribe__container container">
+                    <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
+                    <p class="subscribe__description">Subscribe to our newsletter and get a
+                        special 30% discount on your first trip.
+                    </p>
+
+                    <form action="subscribe.php" class="subscribe__form" method="post">
+                        <input name="email" type="text" placeholder="Enter email" class="subscribe__input">
+
+                        <button class="button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">WayzPune</h3>
+                        <p class="footer__description">Travel you choose the <br> destination,
+                            we offer you the <br> experience.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="about.html" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#home" class="footer__link">Home</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Features</a>
+                            </li>
+                            <!-- <li class="footer__item">
+                                <a href="" class="footer__link">New & Blog</a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <!-- <a href="" class="footer__link">Plan y Pricing</a> -->
+                            </li>
+                            <li class="footer__item">
+                                <!-- <a href="" class="footer__link">Become a member</a> -->
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="review.php" class="footer__link">Submit a Review</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="reviews.php" class="footer__link">View a Review</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="cont.html" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2025 K Enterprises. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: url('./background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Title */
+h1 {
+    font-size: 40px;
+    color: #0F3740;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 20px;
+    color: #FFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+} 
+
+
+p {
+    font-size: 18px;
+    /* color: #ddd; */
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+    margin-bottom: 20px;
+}
+
+/* Cards Layout */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 85%;
+    max-width: 1200px;
+}
+
+/* Card Styles */
+.card {
+    position: relative;
+    width: 30%;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding-bottom: 40px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hide Overlay on Hover */
+.card:hover .overlay {
+    opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}

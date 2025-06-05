@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="header">
+        <h2> covid-19 survey form</h2>
+        <p>Please do share your throughts on covid-19 era</p>
+        <i><b>Your personal information</b></i>
+    </div>
+    <form action="m.html">
+    <label id="name" for="text">Enter your name</label>
+    <input type="text" placeholder="enter a name">
+    </br></br>
+    <label id="email">Enter your email</label>
+    <input  type="email" placeholder="enter a email" required>
+    </br></br>
+    <label id="pw">Enter your password</label>
+    <input  type="password" placeholder="enter a password" required>
+    
+    </br></br>
+     <p>which option best describe your cu</p>
+    <select id="dropdown menu" name="emp current status">
+        <option value=""  selected disabled>select cuurent status</option>
+        <option value="student">Student</option>
+        <option value=">employeed">employeed</option>
+        <option value="Unemplyeed">Un-emplyeed</option>
+        <option value="Not seeking for job">Not seeking for job </option>
+    </select>
+</br> </br>
+    <label id="CD"> Are you planing to get covid vaccine</label>
+</br> 
+    <input type="radio" value="yes" name="d" value="fg"> yes 
+</br> </br>
+    <input type="radio" value="NO" name="d" value="gf"> No 
+</br> </br>
+    <input type="radio" value="may be" name="d"> May be 
+</br> </br>
+    <p>if yes then which vaccine</p>
+    <select name="select vaccine name" >
+        <option value="" selected disabled>select a valid vaccine</option>
+        <option value="covin">Covin</option>
+        <option value="covin">Covinsheild</option>
+        <option value="covin">Covinking</option>
+    </select>
+</br> </br>
+ <p>If no ,please state your reason</p>
+ <textarea id="tx" name="are" rows="4" cols="60"></textarea>
+</br> </br>
+ <label id="jk">if your already vaccinated are still take precautions :</label>
+</br> 
+   <input type="checkbox" value="wash hands regularly">wash hands regularly
+</br> </br>
+   <input type="checkbox" value="wear a mask"> wear a mask
+</br> </br>
+   <input type="checkbox" value="social distance"> Social distance
+</br> </br>
+<button type="submit" style="color: blueviolet;"> Submit </button>
+    </form>
+</body>
+</html>

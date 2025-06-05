@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+    <link rel="stylesheet" href="stylet.css"> <!-- Your existing CSS -->
+    <style>
+        body {
+            background: url('./img/punef.jpg') no-repeat center center/cover; /* Change to your theme */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        select, input {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1b2359;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background:#0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Plan Your Trip</h2>
+    <form action="trip_process.php" method="POST">
+        <label>Starting Location</label>
+        <input type="text" name="start_location" class="input-field" required>
+
+        <label>Destination</label>
+        <input type="text" name="destination" class="input-field" required>
+
+        <label>Number of Days</label>
+        <input type="number" name="days" class="input-field" required>
+
+        <label>Number of People</label>
+        <input type="number" name="people" class="input-field" required>
+
+        <label>Preferred Mode of Travel</label>
+        <select name="travel_mode" class="input-field">
+            <option value="Road">Road</option>
+            <option value="Train">Train</option>
+            <option value="Flight">Flight</option>
+        </select>
+
+        <label>Experience Level</label>
+        <select name="experience_level" class="input-field">
+            <option value="Luxury">Luxury</option>
+            <option value="Mid-range">Mid-range</option>
+            <option value="Local">Local</option>
+        </select>
+
+        <label>Additional Preferences (Optional)</label>
+        <textarea name="preferences" class="input-field" rows="3" placeholder="Special requests, food, guide, etc."></textarea>
+
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+</body>
+</html>
